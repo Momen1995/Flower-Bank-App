@@ -7,3 +7,17 @@
 body{
   font-family: "Montserrat", sans-serif;
 }
+
+.balance-deposit{
+  background-color: rgb(43, 184, 184);
+  color: aliceblue;
+}
+
+.balance-withdraw{
+  background-color: rgb(230, 46, 46);
+  color: aliceblue;
+}
+
+.movement-row{
+  border-bottom: 1px solid rgb(230, 225, 225);
+}
