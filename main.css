@@ -21,3 +21,7 @@ body{
 .movement-row{
   border-bottom: 1px solid rgb(230, 225, 225);
 }
+
+.movement-container{
+  height: 300px;
+}
