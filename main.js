@@ -5,6 +5,7 @@ const moneyIn = document.querySelector(".money-in");
 const moneyInterest = document.querySelector(".money-interest");
 const moneyOut = document.querySelector(".money-out");
 const totalMoney = document.querySelector(".total-balance");
+const userDetailContainer = document.querySelector(".user-detail");
 
 //log in implement
 //display movements
@@ -57,3 +58,19 @@ function totalBalance(userData) {
 }
 
 totalBalance(userData[0]);
+
+function displayDetail(userData){
+  const ageCalc = new Date().getFullYear() - userData.age;
+
+  const html = `
+  <div class="flex justify-between items-center">
+    <h3 class="text-[18px] font-semibold text-gray-700">Name: ${userData.owner}</h3>
+    <p class="text-[18px] font-semibold text-gray-700">Age: ${ageCalc}</p>
+    <img src=${userData.image} alt="" class="w-[60px] h-[60px] rounded-full" />
+  </div>
+  `;
+
+  userDetailContainer.insertAdjacentHTML("afterbegin",html)
+}
+
+displayDetail(userData[0])
